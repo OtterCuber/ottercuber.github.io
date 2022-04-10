@@ -79,11 +79,15 @@
 <li><a href="#pll-algorithms">PLL Algorithms<span></span></a></li>
 <li><a href="#oll-algorithms">OLL Algorithms<span></span></a></li>
 <li><a href="#other-algs">Other Algs<span></span></a></li>
-<li><a href="#beginner-method-algorithms">Beginner Method Algorithms<span></span></a>
+<li><a href="#lbl-algorithms">LBL Algorithms<span></span></a>
 <ul>
 <li><a href="#beginner-method-shortcuts">Beginner Method Shortcuts<span></span></a></li>
 </ul></li>
 <li><a href="#cross-tricks">Cross Tricks<span></span></a></li>
+<li><a href="#corners-first-algorithms">Corners-First Algorithms<span></span></a>
+<ul>
+<li><a href="#example-solve">Example Solve<span></span></a></li>
+</ul></li>
 <li><a href="#beginner-roux-notes">Beginner Roux Notes<span></span></a></li>
 <li><a href="#m2op-algorithms-jack-cai">M2/OP Algorithms (Jack Cai)<span></span></a></li>
 <li><a href="#side-pll-recognition">2-Side PLL Recognition<span></span></a>
@@ -2403,8 +2407,8 @@ R U R’ U’ M’ U R U’ r’
 <li>Sledgehammer insertion: R’ F R F’ or L F’ L’ F</li>
 </ol>
 </div>
-<div id="beginner-method-algorithms" class="section level1 hasAnchor">
-<h1>Beginner Method Algorithms<a href="#beginner-method-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="lbl-algorithms" class="section level1 hasAnchor">
+<h1>LBL Algorithms<a href="#lbl-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <ol style="list-style-type: decimal">
 <li>Bottom layer (white) cross</li>
 <li>Bottom layer corners: R U R’ U’</li>
@@ -2423,6 +2427,170 @@ R U R’ U’ M’ U R U’ r’
 <div id="cross-tricks" class="section level1 hasAnchor">
 <h1>Cross Tricks<a href="#cross-tricks" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>r’ U r insertion</p>
+</div>
+<div id="corners-first-algorithms" class="section level1 hasAnchor">
+<h1>Corners-First Algorithms<a href="#corners-first-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This is a corners-first solution specifically tailored for those familiar with the CFOP method. I use NBRS for referencing pieces.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<table class=" lightable-paper table" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Goal
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Cube
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Solution
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 8em; ">
+Solve white corners
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_01.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+Solve intuitively
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: top !important;width: 8em; " rowspan="3">
+Orient yellow corners
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_02.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+If no corners are oriented, place yellow sticker in FUL position, then sune (R U R’ U R U2’ R’). Repeat if necessary.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_03.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+If one corner is oriented, place yellow corner in UFL position, then sune (R U R’ U R U2’ R’). Repeat if necessary.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_04.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+If two corners are oriented, place yellow sticker in FUL position, then sune (R U R’ U R U2’ R’). Repeat if necessary.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: top !important;width: 8em; " rowspan="2">
+Permute yellow corners
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_05.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+To swap adjacent corners, use T perm (R U R’ U’ R’ F R2 U’ R’ U’ R U R’ F’)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_06.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+To swap opposite corners, use Y perm (F R U’ R’ U’ R U R’ F’ R U R’ U’ R’ F R F’)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+Solve white edges
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_07.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+Solve three edges intuitively, e.g., U’ M2’ U, and leave one edge unsolved (keyhole)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+Solve yellow edges
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_08.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+Solve four edges intuitively, e.g., U’ M’ U, using the unsolved keyhole for insertions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: top !important;width: 8em; " rowspan="2">
+Solve last white edge
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_09.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+If it’s a bad edge, place in DFM and use U’ M U2’ M U’
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_10.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+If it’s a good edge, place in DBM and use U M’ U2 M’ U
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: top !important;width: 8em; " rowspan="3">
+Solve middle edges
+</td>
+<td style="text-align:left;">
+<img src="photos/cf_11.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+To flip the UFM/UBM edges, use (M’ U’)3 (U’ M)3 U2’
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_12.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+To swap the UFM/UBM and DFM/DBM edges, use (M2 U2)2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 8em; ">
+<img src="photos/cf_13.png" width="96" height="96">
+</td>
+<td style="text-align:left;">
+To cycle three edges, use M’ U2’ M U2’
+</td>
+</tr>
+</tbody>
+</table>
+<div id="example-solve" class="section level2 hasAnchor">
+<h2>Example Solve<a href="#example-solve" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>An example solve using Minh Thai’s 1982 WR scramble:</p>
+<p><strong>U L2 D’ B2 U’ R2 B2 F2 D’ F2 L2 R2 F R2 D L2 R2 B’ L’ D’ R F’</strong></p>
+<p>U’ B L2’ U2 D’ l’ F’ l // Solve white corners</p>
+<p>x2’ (R U R’ U R U2’ R’)2 U2 (R U R’ U R U2’ R’) // Orient yellow corners</p>
+<p>U2 (R U R’ U’ R’ F R2 U’ R’ U’ R U R’ F’) // Permute yellow corners (T)</p>
+<p>z R’ U’ M U // White-orange edge</p>
+<p>L’ M’ U M2 U’ // White-blue edge</p>
+<p>L’ U’ M U // White-red edge</p>
+<p>L’ R U’ M’ U2’ M2’ U’ // Yellow-orange edge</p>
+<p>R U’ M’ U R2 M’ U M’ U’ // Yellow-green edge</p>
+<p>R’ U’ M’ U // Yellow-red edge</p>
+<p>R’ M’ U M’ U’ // Yellow-blue edge</p>
+<p>M2’ (U M’ U2 M’ U) // Solve last white edge</p>
+<p>R r x M’ U2 M U2’ // Cycle three edges</p>
+<p>x’ (M’ U’)3 (U’ M)3 U2’ // Flip UFM/UBM edges</p>
+</div>
 </div>
 <div id="beginner-roux-notes" class="section level1 hasAnchor">
 <h1>Beginner Roux Notes<a href="#beginner-roux-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -3012,6 +3180,18 @@ two opp headlights</p>
 
 </div>
 </div>
+</div>
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://sites.google.com/site/athefre/nbrs" class="uri">https://sites.google.com/site/athefre/nbrs</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
