@@ -23,7 +23,7 @@
 <meta name="author" content="OtterCuber" />
 
 
-<meta name="date" content="2022-04-10" />
+<meta name="date" content="2022-04-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -78,25 +78,19 @@
 <li><a href="#f2l-algorithms">F2L Algorithms<span></span></a></li>
 <li><a href="#pll-algorithms">PLL Algorithms<span></span></a></li>
 <li><a href="#oll-algorithms">OLL Algorithms<span></span></a></li>
-<li><a href="#other-algs">Other Algs<span></span></a></li>
-<li><a href="#lbl-algorithms">LBL Algorithms<span></span></a>
+<li><a href="#side-pll-recognition">2-Side PLL Recognition<span></span></a></li>
+<li><a href="#beginner-methods">Beginner Methods<span></span></a>
 <ul>
-<li><a href="#beginner-method-shortcuts">Beginner Method Shortcuts<span></span></a></li>
+<li><a href="#lbl">LBL<span></span></a></li>
+<li><a href="#miris">MirIS<span></span></a></li>
 </ul></li>
-<li><a href="#cross-tricks">Cross Tricks<span></span></a></li>
 <li><a href="#corners-first-algorithms">Corners-First Algorithms<span></span></a>
 <ul>
 <li><a href="#example-solve">Example Solve<span></span></a></li>
 </ul></li>
 <li><a href="#beginner-roux-notes">Beginner Roux Notes<span></span></a></li>
 <li><a href="#m2op-algorithms-jack-cai">M2/OP Algorithms (Jack Cai)<span></span></a></li>
-<li><a href="#side-pll-recognition">2-Side PLL Recognition<span></span></a>
-<ul>
-<li><a href="#epll">EPLL<span></span></a>
-<ul>
-<li><a href="#uaub">Ua/Ub<span></span></a></li>
-</ul></li>
-</ul></li>
+<li><a href="#misc-notes">Misc Notes<span></span></a></li>
 </ul>
 
       </nav>
@@ -117,11 +111,11 @@
 <div id="header">
 <h1 class="title">Speedcubing</h1>
 <p class="author"><em>OtterCuber</em></p>
-<p class="date"><em>2022-04-10</em></p>
+<p class="date"><em>2022-04-11</em></p>
 </div>
 <div id="solves" class="section level1 hasAnchor">
 <h1>Solves<a href="#solves" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>Total Solves:</strong> 9143</p>
+<p><strong>Total Solves:</strong> 9163</p>
 <p><strong>Best Single:</strong> 13.09</p>
 <p><strong>Best Ao5:</strong> 18.42</p>
 <p><strong>Best Ao12:</strong> 20.36</p>
@@ -2401,14 +2395,179 @@ R U R’ U’ M’ U R U’ r’
 </tbody>
 </table>
 </div>
-<div id="other-algs" class="section level1 hasAnchor">
-<h1>Other Algs<a href="#other-algs" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<ol style="list-style-type: decimal">
-<li>Sledgehammer insertion: R’ F R F’ or L F’ L’ F</li>
-</ol>
+<div id="side-pll-recognition" class="section level1 hasAnchor">
+<h1>2-Side PLL Recognition<a href="#side-pll-recognition" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Pattern
+</th>
+<th style="text-align:left;">
+PLL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Bar + HL (adj)
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bar + HL (opp)
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (adj) + Bar
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (opp) + Bar
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL + HL (opp)
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (opp) + HL
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (adj) + HL (adj/odd)
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (adj/odd) + HL (adj)
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2-color 6-checker
+</td>
+<td style="text-align:left;">
+Z
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Adj Edges &amp; 4 colors
+</td>
+<td style="text-align:left;">
+Z
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+HL (opp) + HL (opp)
+</td>
+<td style="text-align:left;">
+H
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bar + 2-bar (left)
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bar + 2-bar (right)
+</td>
+<td style="text-align:left;">
+Jb
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2-bar (left) + Bar
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2-bar (right) + Bar
+</td>
+<td style="text-align:left;">
+Jb
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Two 2-bar (left) + Bookend
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Two 2-bar (right) + Bookend
+</td>
+<td style="text-align:left;">
+Jb
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+4 colors with Bar
+</td>
+<td style="text-align:left;">
+F
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bookend with enclosed checkers
+</td>
+<td style="text-align:left;">
+F
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="lbl-algorithms" class="section level1 hasAnchor">
-<h1>LBL Algorithms<a href="#lbl-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="beginner-methods" class="section level1 hasAnchor">
+<h1>Beginner Methods<a href="#beginner-methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="lbl" class="section level2 hasAnchor">
+<h2>LBL<a href="#lbl" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li>Bottom layer (white) cross</li>
 <li>Bottom layer corners: R U R’ U’</li>
@@ -2418,15 +2577,20 @@ R U R’ U’ M’ U R U’ r’
 <li>Top layer corners: (U R U’ L’) (U R’ U’ L)</li>
 <li>Orient top layer corners: x2 R U R’ U’</li>
 </ol>
-<div id="beginner-method-shortcuts" class="section level2 hasAnchor">
-<h2>Beginner Method Shortcuts<a href="#beginner-method-shortcuts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Step 2: To save an edge on the right side, use U (R U R’ U’) U’ (R U R’ U’). To save an edge on the left side, use U’ (L’ U’ L U) U (L’ U’ L U)</p>
 <p>Step 2: If white is on top: (R U2 R’ U’) (R U R’ U’)</p>
 </div>
+<div id="miris" class="section level2 hasAnchor">
+<h2>MirIS<a href="#miris" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>One of the most basic solutions to the Rubik’s cube is the MirIS method, which solves the entire cube using a single right-hand (RH) algorithm—U R U’ R’—and its mirrored, left-hand (LH) version—U’ L’ U L.</p>
+<ol style="list-style-type: decimal">
+<li>Solve the white cross and three corners of the white cross using RH</li>
+<li>Solve each corresponding edge of the solved corners using a combination of RH and LH</li>
+<li>Orient the yellow edges using RH and LH</li>
+<li>Permute the yellow edges using RH U RH</li>
+<li>Solve the remaining corners using RH, rotating the cube as necessary</li>
+</ol>
 </div>
-<div id="cross-tricks" class="section level1 hasAnchor">
-<h1>Cross Tricks<a href="#cross-tricks" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>r’ U r insertion</p>
 </div>
 <div id="corners-first-algorithms" class="section level1 hasAnchor">
 <h1>Corners-First Algorithms<a href="#corners-first-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -2608,7 +2772,7 @@ To cycle three edges, use M’ U2’ M U2’
 <h1>M2/OP Algorithms (Jack Cai)<a href="#m2op-algorithms-jack-cai" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>If there are an odd number of corners, either (1) use the parity alg (Y) after solving edges then corners, or (2) solve the A/Q edge as the D/E edge and the D/E edge as the A/Q edge (this works, because if the modified Y perm is executed an odd number of times while solving corners, the UL and UB edges will end up in swapped locations).</p>
 <p>If c, w, i, or s are the 2nd letter of a memo pair, perform the inverse algorithm, denoted below by the prime (’) symbol.</p>
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -3154,32 +3318,13 @@ Y
 </tbody>
 </table>
 </div>
-<div id="side-pll-recognition" class="section level1 hasAnchor">
-<h1>2-Side PLL Recognition<a href="#side-pll-recognition" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="epll" class="section level2 hasAnchor">
-<h2>EPLL<a href="#epll" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="uaub" class="section level3 hasAnchor">
-<h3>Ua/Ub<a href="#uaub" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>BAR + headlights
-RIGHT ADJ = Ua
-RIGHT OPP = Ub</p>
-<p>headlights + BAR
-LEFT ADJ = Ub
-LEFT OPP = Ua</p>
-<p>headlights + headlights (opp edge is next to the bar)
-opp right = Ua
-opp left = Ub</p>
-<p>headlights + headlights (adj + adj) (odd color is opp bar)
-odd right = Ua
-odd left = Ub</p>
-<p>Z
-checkerboard
-adj edges &amp; 4 colors</p>
-<p>H
-two opp headlights</p>
+<div id="misc-notes" class="section level1 hasAnchor">
+<h1>Misc Notes<a href="#misc-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The Rubik’s cube has 6 faces, 6 center pieces, 12 edge pieces, and 8 corner pieces. There are approximately 43 quintillion ways of scrambling a 3x3 cube:</p>
+<p><span class="math display">\[
+\frac{(8! \cdot 3^8) \cdot (12! \cdot 2^{12})}{12} = 43252003274489856000
+\]</span></p>
 
-</div>
-</div>
 </div>
 
 
@@ -3253,6 +3398,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
