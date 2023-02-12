@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Speedcubing</title>
   <meta name="description" content="Speedcubing" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Speedcubing" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="OtterCuber" />
 
 
-<meta name="date" content="2022-11-05" />
+<meta name="date" content="2023-02-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,8 +58,9 @@
 <script src="libs/react-17.0.0/react.min.js"></script>
 <script src="libs/react-17.0.0/react-dom.min.js"></script>
 <script src="libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<script src="libs/reactable-binding-0.3.0/reactable.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/reactable-0.4.3/reactable.css" rel="stylesheet" />
+<script src="libs/reactable-binding-0.4.3/reactable.js"></script>
 
 
 
@@ -87,6 +88,7 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#pll-algorithms"><i class="fa fa-check"></i>PLL Algorithms</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#oll-algorithms"><i class="fa fa-check"></i>OLL Algorithms</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#side-pll-recognition"><i class="fa fa-check"></i>2-Side PLL Recognition</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#side-pll-auf-recognition"><i class="fa fa-check"></i>2-Side PLL AUF Recognition</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#beginner-methods"><i class="fa fa-check"></i>Beginner Methods</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#lbl"><i class="fa fa-check"></i>LBL</a></li>
@@ -99,6 +101,8 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#beginner-roux-notes"><i class="fa fa-check"></i>Beginner Roux Notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#m2op-algorithms-jack-cai"><i class="fa fa-check"></i>M2/OP Algorithms (Jack Cai)</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#misc-notes"><i class="fa fa-check"></i>Misc Notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#gear-cube-algorithms"><i class="fa fa-check"></i>Gear Cube Algorithms</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#x2-algorithms"><i class="fa fa-check"></i>2x2 Algorithms</a></li>
 <li class="chapter" data-level="" data-path="01_Solves.html"><a href="01_Solves.html"><i class="fa fa-check"></i>All Solves</a></li>
 <li class="chapter" data-level="" data-path="02_ZZ.html"><a href="02_ZZ.html"><i class="fa fa-check"></i>Top ZZ Speedcubers</a></li>
 </ul>
@@ -121,7 +125,7 @@
 <div id="header">
 <h1 class="title">Speedcubing</h1>
 <p class="author"><em>OtterCuber</em></p>
-<p class="date"><em>2022-11-05</em></p>
+<p class="date"><em>2023-02-13</em></p>
 </div>
 <div id="my-apps" class="section level1 hasAnchor">
 <h1>My Apps<a href="index.html#my-apps" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -130,13 +134,13 @@
 </div>
 <div id="solves" class="section level1 hasAnchor">
 <h1>Solves<a href="index.html#solves" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>Total Solves:</strong> 14823</p>
+<p><strong>Total Solves:</strong> 15435</p>
 <p><strong>Best Single:</strong> 12.44</p>
 <p><strong>Best Ao5:</strong> 16.85</p>
 <p><strong>Best Ao12:</strong> 17.88</p>
 <p><strong>Best Ao100:</strong> 20.12</p>
-<p><strong>Days since first solve:</strong> 468 days (2021-07-20 to 2022-10-31)</p>
-<p><strong>Days cubing:</strong> 289 days</p>
+<p><strong>Days since first solve:</strong> 505 days (2021-07-20 to 2022-12-07)</p>
+<p><strong>Days cubing:</strong> 304 days</p>
 <p><img src="_main_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 <div id="top-5-single" class="section level1 hasAnchor">
@@ -373,25 +377,25 @@ Ao5
 </tr>
 <tr>
 <td style="text-align:left;width: 10em; ">
-2022-10-14
+2022-11-12
 </td>
 <td style="text-align:right;">
-17.28
+17.23
 </td>
 <td style="text-align:right;">
-15.25
+16.48
 </td>
 <td style="text-align:right;">
-15.83
+18.32
 </td>
 <td style="text-align:right;">
-17.95
+21.58
 </td>
 <td style="text-align:right;">
-18.06
+16.16
 </td>
 <td style="text-align:right;">
-21.82
+16.89
 </td>
 </tr>
 </tbody>
@@ -827,6 +831,18 @@ GAN 11 M Pro (Ang+L)
 </td>
 <td style="text-align:left;">
 3 clicks for tension; setting 4 for spring compression (dark blue); Angstrom Gravitas (clear; slow) on two corner pieces and Angstrom Dignitas (white; fast) on one edge piece; 6 drops of Lunar
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+G13
+</td>
+<td style="text-align:left;">
+GAN 13 M MagLev
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
 </td>
 </tr>
 </tbody>
@@ -3280,6 +3296,254 @@ V
 </tbody>
 </table>
 </div>
+<div id="side-pll-auf-recognition" class="section level1 hasAnchor">
+<h1>2-Side PLL AUF Recognition<a href="index.html#side-pll-auf-recognition" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>“All PLLs preserve something. You just gotta learn what they preserve.” - Mati, 2023</p>
+<table class=" lightable-classic" style="font-family: Helvetica; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+No
+</th>
+<th style="text-align:left;">
+PLL
+</th>
+<th style="text-align:left;">
+Cube
+</th>
+<th style="text-align:left;">
+Recognition
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Aa
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_01.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: Aa-perm is a Corner Permutation of the Last Layer (CPLL) that only permutes or cycles three corners of the last layer. This means that executing the algorithm will leave a 2x2 block untouched.<br><br><strong>PreAUF</strong>: U2, because my algorithm is executed with the 2x2 block on the front left<br><br><strong>PostAUF</strong>: U, because the LUF red sticker will be moved to the back after the U2 pre-AUF and an additional U move will move it into the correct position
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Aa
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_02.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U’, because if a 2x1 block is not visible before pre-AUF, the 2x2 block is in the back and will have to be moved to the front left position<br><br><strong>PostAUF</strong>: U, to undo the pre-AUF U’ move, because the edges are already solved
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+Ab
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_03.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: Ab-perm is a Corner Permutation of the Last Layer (CPLL) that only permutes or cycles three corners of the last layer. This means that executing the algorithm will leave a 2x2 block untouched.<br><br><strong>PreAUF</strong>: U2, moving the 2x2 block to the front left position<br><br><strong>PostAUF</strong>: U’, because the LUF orange sticker moves to the back after the pre-AUF of U2 and needs a U’ move to return to its correct position. Alternatively, one can track the RUF blue sticker as well, because Ab-perm will not alter any edges; they will remain fixed
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_04.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: E-perm is a CPLL with four corner swaps. Since only the corners are swapped, E-perm does not alter the edge pieces. Therefore, one might think that the only pre-AUF concern would be to move the edges into their proper position, then execute E-perm. However, sometimes this might result in the wrong corners being swapped. Even if the edges are already in the right position, a pre-AUF may be necessary to swap the correct corners.<br><br><strong>PreAUF</strong>: None, because the orange-blue-orange 3-checker pattern is on the right side<br><br><strong>PostAUF</strong>: U2, because the edge pieces are not altered by E-perm, therefore U2 will move the RUF and LUF edges to their proper locations
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_05.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U or U’, because the blue-orange-blue 3-checker pattern is on the left side<br><br><strong>PostAUF</strong>: U’ or U, to undo the pre-AUF move
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_06.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: U-perms are EPLLs that cycle three edges. The 3-bar that is untouched by the algorithm will be adjacent to the odd edge that is opposite the color of its associated headlights and opposite the odd edge that is adjacent to headlights.<br><br><strong>PreAUF</strong>: None, because the odd edge is opposite, therefore the 3-bar is already in the back<br><br><strong>PostAUF</strong>: U2, because the corners, which are fixed, are U2 away from their correct positions
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Ua
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_07.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U, because the odd edge is adjacent, therefore the 3-bar is opposite and needs to move to the back with a U move<br><br><strong>PostAUF</strong>: U2, because the corners are now U2 away from their correct position
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_08.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: None, because the odd edge is opposite, therefore the 3-bar is already in the back<br><br><strong>PostAUF</strong>: U’, because the corners are fixed
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Ub
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_09.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U, because the odd edge is adjacent, therefore the 3-bar is opposite and needs to move to the back with a U move<br><br><strong>PostAUF</strong>: None, because the pre-AUF move fixed the corners as well
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Z
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_10.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: Z-perm is an EPLL that cycles edges diagonally. My algorithm requires a checker pattern in the front and right layers. AUF is complicated by the fact that the algorithm also shifts the upper layer by U’.<br><br><strong>PreAUF</strong>: U or U’, to obtain a checkers pattern<br><br><strong>PostAUF</strong>: U or U’. If the corners are fixed during pre-AUF with U, but shifted U’ during the alg, a post-AUF of U will be needed to undo the alg’s U’ shift. If the corners are shifted to being U2 away from being solved via a U’ pre-AUF move, and shifted U’ during the alg, then another U’ will be needed to fix the corners.
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+H
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_11.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: None<br><br><strong>PostAUF</strong>: None
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_12.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: F-perm permutes both edges and corners. My algorithm is executed with a 3-bar on the L face, which leaves the RUS edge unaltered. Either this sticker can be used to determine post-AUF or the bookends can be used, as they become the F face color after executing F-perm.<br><br><strong>PreAUF</strong>: None, because the 3-bar is adjacent to the opposite-colored pair<br><br><strong>PostAUF</strong>: U’, because the bookend colors will become the F face after executing F-perm
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_13.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U’, because the 3-bar is adjacent to the opposite-colored pair<br><br><strong>PostAUF</strong>: None, because pre-AUF solves the RUS edge, which is not altered by F-perm
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_14.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>Intuition</strong>: The 3-bar is opposite the opposite colored blocks (O-block) or adjacent to the adjacent colored blocks (A-block). For my alg, the goal of pre-AUF is to move the 3-bar to the L face. If the 3-bar is present before pre-AUF, its color can be used to deduce the post-AUF (as it remains fixed). If the 3-bar is hidden from view, and there is an O-block in the F face, then the FUR sticker can be used to determine the post-AUF (because after a U’ pre-AUF, its color will be the same as the 2-bar in the F face). If the 3-bar is hidden, and there is an A-block in the F face, then the 2-bar in the F face (or the LUF sticker) can be used to determine the post-AUF, as the 2-bar remains fixed.<br><br><strong>PreAUF</strong>: None, because the O-block (orange-red) is on the R face, therefore the 3-bar is already on the L face<br><br><strong>PostAUF</strong>: U’, because the LUF red sticker (or the red 2-bar) is fixed and needs U’ to return to its correct location
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_15.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U’, because there is an O-block (orange-red) in the F layer<br><br><strong>PostAUF</strong>: U’, because the FUR sticker is U’ away from its correct location
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Ja
+</td>
+<td style="text-align:left;">
+<img src="photos/auf_16.png" width="96" height="96">
+</td>
+<td style="text-align:left;width: 34em; ">
+<strong>PreAUF</strong>: U2, to move the 3-bar to the L face<br><br><strong>PostAUF</strong>: U’, because the 3-bar is U’ away from the F face (after pre-AUF)
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="beginner-methods" class="section level1 hasAnchor">
 <h1>Beginner Methods<a href="index.html#beginner-methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="lbl" class="section level2 hasAnchor">
@@ -4058,6 +4322,22 @@ Y
 <p><span class="math display">\[
 \frac{(8! \cdot 3^8) \cdot (12! \cdot 2^{12})}{12} = 43252003274489856000
 \]</span></p>
+</div>
+<div id="gear-cube-algorithms" class="section level1 hasAnchor">
+<h1>Gear Cube Algorithms<a href="index.html#gear-cube-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ol style="list-style-type: decimal">
+<li><p>Solve corners</p></li>
+<li><p>Solve edges</p></li>
+</ol>
+<p>Parallel swap: Hold on top then U2 R4 U2 R4</p>
+<p>Flip four edges: (R2 U2)3 (put on FRONT four edges that need to be flipped)</p>
+</div>
+<div id="x2-algorithms" class="section level1 hasAnchor">
+<h1>2x2 Algorithms<a href="index.html#x2-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ol style="list-style-type: decimal">
+<li><p>U R U’ R’</p></li>
+<li><p>U R U’ L’ U R’ U’ L</p></li>
+</ol>
 
 </div>
 <div class="footnotes">
