@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Speedcubing</title>
   <meta name="description" content="Speedcubing" />
-  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Speedcubing" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="OtterCuber" />
 
 
-<meta name="date" content="2023-02-18" />
+<meta name="date" content="2023-06-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -58,12 +58,16 @@
 <script src="libs/react-17.0.0/react.min.js"></script>
 <script src="libs/react-17.0.0/react-dom.min.js"></script>
 <script src="libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
-<link href="libs/reactable-0.4.3/reactable.css" rel="stylesheet" />
-<script src="libs/reactable-binding-0.4.3/reactable.js"></script>
+<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/reactable-0.4.4/reactable.css" rel="stylesheet" />
+<script src="libs/reactable-binding-0.4.4/reactable.js"></script>
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 </head>
 
@@ -99,10 +103,12 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#example-solve"><i class="fa fa-check"></i>Example Solve</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#beginner-roux-notes"><i class="fa fa-check"></i>Beginner Roux Notes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#nauty-s"><i class="fa fa-check"></i>Nauty-S</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#m2op-algorithms-jack-cai"><i class="fa fa-check"></i>M2/OP Algorithms (Jack Cai)</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#orozco-notes"><i class="fa fa-check"></i>Orozco Notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#misc-notes"><i class="fa fa-check"></i>Misc Notes</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#gear-cube-algorithms"><i class="fa fa-check"></i>Gear Cube Algorithms</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#x2-algorithms"><i class="fa fa-check"></i>2x2 Algorithms</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#x2-algorithms-jperm"><i class="fa fa-check"></i>2x2 Algorithms (JPerm)</a></li>
 <li class="chapter" data-level="" data-path="01_Solves.html"><a href="01_Solves.html"><i class="fa fa-check"></i>All Solves</a></li>
 <li class="chapter" data-level="" data-path="02_ZZ.html"><a href="02_ZZ.html"><i class="fa fa-check"></i>Top ZZ Speedcubers</a></li>
 </ul>
@@ -125,7 +131,7 @@
 <div id="header">
 <h1 class="title">Speedcubing</h1>
 <p class="author"><em>OtterCuber</em></p>
-<p class="date"><em>2023-02-18</em></p>
+<p class="date"><em>2023-06-18</em></p>
 </div>
 <div id="my-apps" class="section level1 hasAnchor">
 <h1>My Apps<a href="index.html#my-apps" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -141,7 +147,7 @@
 <p><strong>Best Ao100:</strong> 20.12</p>
 <p><strong>Days since first solve:</strong> 505 days (2021-07-20 to 2022-12-07)</p>
 <p><strong>Days cubing:</strong> 304 days</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 <div id="top-5-single" class="section level1 hasAnchor">
 <h1>Top 5 Single<a href="index.html#top-5-single" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -678,7 +684,7 @@ Ao12
 </div>
 <div id="times-by-cross-color" class="section level1 hasAnchor">
 <h1>Times by Cross Color<a href="index.html#times-by-cross-color" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="cube-settings" class="section level1 hasAnchor">
 <h1>Cube Settings<a href="index.html#cube-settings" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -3482,7 +3488,7 @@ F
 <img src="photos/auf_12.png" width="96" height="96">
 </td>
 <td style="text-align:left;width: 34em; ">
-<strong>Intuition</strong>: F-perm permutes both edges and corners. My algorithm is executed with a 3-bar on the L face, which leaves the RUS edge unaltered. Either this sticker can be used to determine post-AUF or the bookends can be used, as they become the F face color after executing F-perm.<br><br><strong>PreAUF</strong>: None, because the 3-bar is adjacent to the opposite-colored pair<br><br><strong>PostAUF</strong>: U’, because the bookend colors will become the F face after executing F-perm
+<strong>Intuition</strong>: F-perm permutes both edges and corners. For my alg, to determine pre-AUF, note that the 3-bar is opposite the opposite HL and needs to be oriented on the L face. To determine post-AUF, note that both the 3-bar (which is opposite opposite HL) and the RUS edge are fixed. Alternatively, the bookends can also be used, as they become the F face color after executing F-perm.<br><br><strong>PreAUF</strong>: None, because the 3-bar is adjacent to the opposite-colored pair<br><br><strong>PostAUF</strong>: U’, because the bookend colors will become the F face after executing F-perm
 </td>
 </tr>
 <tr>
@@ -3496,7 +3502,7 @@ F
 <img src="photos/auf_13.png" width="96" height="96">
 </td>
 <td style="text-align:left;width: 34em; ">
-<strong>PreAUF</strong>: U’, because the 3-bar is adjacent to the opposite-colored pair<br><br><strong>PostAUF</strong>: None, because pre-AUF solves the RUS edge, which is not altered by F-perm
+<strong>PreAUF</strong>: U’, because the 3-bar is opposite the opposite-colored HL<br><br><strong>PostAUF</strong>: None, because pre-AUF moves the red edge to RUS, which is not altered by F-perm
 </td>
 </tr>
 <tr>
@@ -3552,7 +3558,7 @@ Jb
 <img src="photos/auf_17.png" width="96" height="96">
 </td>
 <td style="text-align:left;width: 34em; ">
-<strong>Intuition</strong>: My Jb alg is executed with the 3-bar on the left, so the goal of pre-AUF will be to move the 3-bar to the left. When it is hidden from view, it is opposite the O-block (or opposite colored blocks). The RUF sticker before pre-AUF will be the same color as the 2-bar on the F face after pre-AUF (or if no pre-AUF is needed). Therefore, the RUF sticker will determine the post-AUF when the 3-bar is hidden. If the 3-bar is not hidden, then note that it will move to the back layer after Jb-perm; knowing this will therefore determine the post-AUF.<br><br><strong>PreAUF</strong>: U’, because the O-block is in the F face, therefore the 3-bar is in the back and needs to be moved to the left<br><br><strong>PostAUF</strong>: U’, because the FUR sticker is red and will become the F face after executing Jb
+<strong>Intuition</strong>: My Jb alg is executed with the 3-bar on the left, so the goal of pre-AUF will be to move the 3-bar to the left. When it is hidden from view, it is opposite the O-block (or opposite colored blocks). If the O-block is on the F face, then the RUF sticker will become the 2-bar on the F face and can be used for post-AUF. If the O-block is on the R face, then the 2-block on the F face can be used for post-AUF. If the 3-bar is not hidden, then note that it will move to the back layer after Jb-perm; knowing this will therefore determine the post-AUF.<br><br><strong>PreAUF</strong>: U’, because the O-block is in the F face, therefore the 3-bar is in the back and needs to be moved to the left<br><br><strong>PostAUF</strong>: U’, because the FUR sticker is red and will become the F face after executing Jb
 </td>
 </tr>
 <tr>
@@ -3734,7 +3740,7 @@ Gc
 <img src="photos/auf_30.png" width="96" height="96">
 </td>
 <td style="text-align:left;width: 34em; ">
-<strong>Intuition</strong>: For Gc-perm, to determine pre-AUF, orient the HL on the L face and the 2-bar on the B face. The execution angle hides both the HL and the 2-bar. To determine post-AUF, note that after Gc-perm, HL will make a quarter counterclockwise turn and that the edges without HL or 2-bar will rotate a quarter clockwise turn.<br><br><strong>PreAUF</strong>: U’, to move the 2-bar to the B face<br><br><strong>PostAUF</strong>: U’, because the red edge will move to R during pre-AUF, then F during Gc-perm, then U’ will return it back to R
+<strong>Intuition</strong>: For Gc-perm, to determine pre-AUF, orient the HL on the L face and the 2-bar on the B face. The execution angle hides both the HL and the 2-bar. To determine post-AUF, note that after Gc-perm, the 2-bar will remain fixed and the edges without HL or 2-bar will rotate U.<br><br><strong>PreAUF</strong>: U’, to move the 2-bar to the B face<br><br><strong>PostAUF</strong>: U’, because the red edge will move to R during pre-AUF, then F during Gc-perm, then U’ will return it back to R
 </td>
 </tr>
 <tr>
@@ -3976,10 +3982,46 @@ To cycle three edges, use M’ U2’ M U2’
 <p>dots: columns then bars or E2 M E2 M’</p>
 <p>cycles: isolate the odd edge, try to U2 without destroying other blocks, then solve</p>
 </div>
+<div id="nauty-s" class="section level1 hasAnchor">
+<h1>Nauty-S<a href="index.html#nauty-s" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Nauty-S is a method developed by Tim Mosher (“tsmosher”) that he describes as “an amalgamation of Mehta, APB, and Nautilus.” Nautilus is a method developed by Michael James Straughan (“Athefre”). Here are my personal notes on how to solve the cube using Nauty-S, borrowing extensively from Tim’s own notes:</p>
+<ol style="list-style-type: decimal">
+<li>First block (FB): Solve Dl</li>
+<li>Three quarter belt (3QB): Use <RUuE> to intuitively solve any 3 belt edges (edges in the E layer)</li>
+<li>Align the belt such that it is solved or offset by E2 (FL and BL are solved or contain the solved FR and BR edges)</li>
+<li><ol style="list-style-type: lower-alpha">
+<li>If the back right BRE edge slot contains the 3rd solved belt edge, then find the DBR corner piece (and the 3rd solved belt edge), and solve this (pseudo)pair into dBR. It will be pseudo if step 3 is offset by E2. (b) If the front right FRE edge slot contains the 3rd solved belt edge, then find the UFR corner piece (and the 3rd solved belt edge), and solve this (pseudo)pair into dBR.</li>
+</ol></li>
+<li><ol style="list-style-type: lower-alpha">
+<li>If the back right BRE edge slot contains the 3rd solved belt edge, find DFR and the last belt edge and solve this (pseudo)pair into dFR; (b) If the front right FRE edge slot contains the 3rd solved belt edge, then find UBR and the last belt edge and solve this (pseudo)pair into dFR.</li>
+</ol></li>
+<li>CLL. Two-step CLL: (a) OCLL (if 1 flipped corner, place in UFL, then sune; if 2 flipped corners, place a corner whose FUL sticker is the U face center piece color or the D face center piece color, then sune; repeat until all four corners are oriented) (b) CPLL (permute the corners by using either T perm or Y perm)</li>
+<li>L5E: First R2 to untransform, then use Tim’s L5E alg sheet to recognize and execute L5E.</li>
+</ol>
+</div>
 <div id="m2op-algorithms-jack-cai" class="section level1 hasAnchor">
 <h1>M2/OP Algorithms (Jack Cai)<a href="index.html#m2op-algorithms-jack-cai" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>If there are an odd number of corners, either (1) use the parity alg (Y) after solving edges then corners, or (2) solve the A/Q edge as the D/E edge and the D/E edge as the A/Q edge (this works, because if the modified Y perm is executed an odd number of times while solving corners, the UL and UB edges will end up in swapped locations).</p>
+<p>If solving edges then corners (i.e., M2 then OP) and there are an odd number of corners (note that this is the case if there are an odd number of corners to be solved, not necessarily an odd number of memo letters, and if there are an odd number of corners, then there will always be an odd number of edges), either (1) use the parity alg (Y) at the very end; or (2) solve the A/Q edge as the D/E edge and the D/E edge as the A/Q edge (this works, because if the modified Y perm is executed an odd number of times while solving corners, the UL and UB edges will end up in swapped locations).</p>
+<p>For M2, the buffer is at DF and the target is at UB. The swapping algorithm is M2. When the target is solved, another cycle has to be started.</p>
+<p>To flip a corner, memo one of its faces and then another face.</p>
 <p>If c, w, i, or s are the 2nd letter of a memo pair, perform the inverse algorithm, denoted below by the prime (’) symbol.</p>
+<p>Tips:</p>
+<ul>
+<li>Use Sh for X; use same sound for letter pairs</li>
+<li>L/F Face Rules: The L face stickers e, f, and g are all x’ U…U’ M2 U…U’; the R face stickers m, o, and p are all U’…U M2 U’…U (Mnemonic: LUV U for Left U)</li>
+<li>F/B/D Face Rules: The F/B stickers on the R face are j and t. j is U R U’ and t is U R’ U’, so they both begin with U (opposite of the above rule). The front sticker goes up to the target piece (R) and the back sticker goes down to the target piece (R’). The D sticker v is similar to j. It is U R2 U’.</li>
+<li>The F/B/D stickers on the L face are l and r. l is U’ L’ U and r is U’ L U. Again, both begin with U’ (opposite of L/R face rule). The D sticker x is similar to l, it just need an extra L’ move to become l: U’ L2’ U.</li>
+<li>Hana: So the way you figure i t out with your memo is its #of letters - #cycle breaks = 11
+So if you have 12 letters, but 1 cycle break, you have 11 solved pieces
+if you have 12 letters, but 2 cycle breaks, that means you are missing a piece</li>
+</ul>
+<pre><code>## [1] 456</code></pre>
+<pre><code>## [1] 140</code></pre>
+<pre><code>## [1] &quot;30.7%&quot;</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula = &#39;y ~ x&#39;</code></pre>
+<p><img src="_main_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<pre><code>## [1] &quot;./progression_3bld/2023-06-18_21.44.22_CST_OtterCuber3bldProgression.png&quot;</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula = &#39;y ~ x&#39;</code></pre>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -4267,7 +4309,7 @@ M2
 i’
 </td>
 <td style="text-align:left;">
-M2’ U’ S R’ F’ R S’ R’ F R U
+M2 U’ S (R’ F’ R) S’ (R’ F R) U
 </td>
 </tr>
 <tr>
@@ -4278,7 +4320,7 @@ M2
 s’
 </td>
 <td style="text-align:left;">
-U’ R’ F’ R S R’ F R S’ U M2’
+U’ (R’ F’ R) S (R’ F R) S’ U M2
 </td>
 </tr>
 <tr>
@@ -4432,7 +4474,7 @@ OP
 P
 </td>
 <td style="text-align:left;">
-(R U’ R’ U’ R U R’ F’ R U R’ U’ R’ F R)
+R U’ R’ U’ R U R’ F’ R U R’ U’ R’ F R
 </td>
 </tr>
 <tr>
@@ -4520,11 +4562,34 @@ Parity
 Y
 </td>
 <td style="text-align:left;">
-(D’ r2 U) M2 (U’ r2 D)
+D’ r2 U (M2) U’ r2 D
 </td>
 </tr>
 </tbody>
 </table>
+</div>
+<div id="orozco-notes" class="section level1 hasAnchor">
+<h1>Orozco Notes<a href="index.html#orozco-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>X Y X’ Y’ is written as [X, Y].
+Z A Z’ is written as [Z: A].
+Commutators are often nested inside conjugates, e.g. Z X Y X’ Y’ Z’ is written as [Z: [X, Y]].</p>
+<p>The inverse of [X, Y] is [Y, X].
+The inverse of [Z: A] is [Z: A’].
+Therefore, the inverse of [Z: [X, Y]] is [Z: [Y, X]].</p>
+<p>Odd Corner: Buffer -&gt; Target -&gt; Helper
+Even Corner: Buffer -&gt; Helper -&gt; Target</p>
+<p>PG
+[U, R’ D’ R]
+[R’ D R, U]</p>
+<p>Inverse
+[U, R’ D R]
+[R’ D’ R, U ]</p>
+<p>Jperm’s scramble
+R2 D’ B2 D R2 F’ U L2 U B’ F’ D F’ D’ F’ U2 B</p>
+<p>Memo: GK OX B(cycle break)F AQ</p>
+<p>If it’s first in the pair, setup to helper (UBR), if second in pair setup to buffer(UFR). Learn cases for Q and N (BRU and RUB)</p>
+<p>G: [U, R’ D R]
+K: [D’ R’ D R, U]</p>
 </div>
 <div id="misc-notes" class="section level1 hasAnchor">
 <h1>Misc Notes<a href="index.html#misc-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -4542,11 +4607,20 @@ Y
 <p>Parallel swap: Hold on top then U2 R4 U2 R4</p>
 <p>Flip four edges: (R2 U2)3 (put on FRONT four edges that need to be flipped)</p>
 </div>
-<div id="x2-algorithms" class="section level1 hasAnchor">
-<h1>2x2 Algorithms<a href="index.html#x2-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="x2-algorithms-jperm" class="section level1 hasAnchor">
+<h1>2x2 Algorithms (JPerm)<a href="index.html#x2-algorithms-jperm" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <ol style="list-style-type: decimal">
-<li><p>U R U’ R’</p></li>
-<li><p>U R U’ L’ U R’ U’ L</p></li>
+<li>U R U’ R’</li>
+</ol>
+<ul>
+<li>If 0 pieces are correct, turn the top layer to get at least 1 correct.</li>
+<li>If 1 piece is correct, hold it in the front/right.</li>
+<li>If 2 pieces are correct (next to each other), turn the top layer so that only 1 is correct.</li>
+<li>If 2 pieces are correct (across/diagonal from each other), hold any piece in the front/right.</li>
+<li>If all 4 pieces are correct, you are done this step!</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>U R U’ L’ U R’ U’ L</li>
 </ol>
 
 </div>
